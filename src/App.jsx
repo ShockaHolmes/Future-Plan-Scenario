@@ -13,7 +13,6 @@ const tabs = [
 
 function App() {
   const [activeTab, setActiveTab] = useState('all')
-  const [aiOpen, setAiOpen] = useState(false)
 
   return (
     <div className="min-h-screen bg-slate-100 p-4 md:p-6">

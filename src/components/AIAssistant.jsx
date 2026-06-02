@@ -58,7 +58,6 @@ export default function AIAssistant({ onClose }) {
   const [answers, setAnswers] = useState({});
   const [showSummary, setShowSummary] = useState(false);
   const [chatMessage, setChatMessage] = useState('');
-  const [chatMode, setChatMode] = useState(false);
 
   const q = questions[currentQ];
   const total = questions.length + 7; // "10 total"
@@ -226,7 +225,7 @@ export default function AIAssistant({ onClose }) {
           <input
             value={chatMessage}
             onChange={(e) => setChatMessage(e.target.value)}
-            onFocus={() => setChatMode(true)}
+            onFocus={() => {}}
             placeholder="Type your message..."
             className="flex-1 bg-white border border-gray-200 rounded-full px-4 py-2 text-xs outline-none focus:border-teal-400"
           />

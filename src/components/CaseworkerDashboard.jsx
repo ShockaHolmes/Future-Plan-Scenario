@@ -53,7 +53,7 @@ const quickActions = [
 ];
 
 export default function CaseworkerDashboard({ onOpenAI }) {
-  const [, setSelectedYouth] = useState(null);
+  const [selectedYouth, setSelectedYouth] = useState(null);
 
   return (
     <div className="flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-lg" style={{ minHeight: 700 }}>
