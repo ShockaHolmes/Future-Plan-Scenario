@@ -21,6 +21,20 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## One-Click Start (macOS)
+
+Double-click `start.command` in Finder to:
+
+- start the Streamlit server (`app.py`)
+- start the React dashboard (`npm run dev`)
+- open the dashboard in your browser (`http://localhost:5173`)
+
+You can also run the same launcher from Terminal:
+
+```bash
+npm start
+```
+
 ## File Structure
 
 | File | Purpose |
@@ -46,8 +60,3 @@ streamlit run app.py
 ## React + Vite (Future Path Dashboards)
 
 This repository also includes a React/Vite front-end for the Future Path dashboards (Teen, Caseworker, and AI Assistant). To run it:
-
-```bash
-npm install
-npm run dev
-```
