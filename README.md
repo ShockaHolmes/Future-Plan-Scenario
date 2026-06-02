@@ -40,3 +40,14 @@ streamlit run app.py
 6. Navigate to **Resource Recommendations** to see matched community resources.
 7. Open the **30/60/90 Action Plan** to review caseworker tasks and export the plan.
 8. Go to **Case Notes** to add a note and schedule the next follow-up date.
+
+---
+
+## React + Vite (Future Path Dashboards)
+
+This repository also includes a React/Vite front-end for the Future Path dashboards (Teen, Caseworker, and AI Assistant). To run it:
+
+```bash
+npm install
+npm run dev
+```
