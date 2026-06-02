@@ -2,7 +2,56 @@
 
 > ⚠️ **All names, cases, and personal details in this application are entirely fictional and created for demonstration purposes only. No real youth or client data is used or stored.**
 
-A Streamlit-based demo platform for youth-serving caseworkers, featuring:
+## Run the demo
+
+1. Open a terminal in the project folder:
+
+```bash
+cd /Users/shocka/Future-Plan-Scenario
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the dashboard (auto-opens browser):
+
+```bash
+npm start
+```
+
+4. Open the URL shown in the terminal (typically `http://localhost:5173/`).
+
+5. Stop the server when done with `Ctrl + C`.
+
+## One-click launch on macOS
+
+If you prefer, you can start everything by double-clicking `start.command` in Finder.
+This script will:
+
+- install dependencies if needed
+- start the Vite server
+- open the dashboard in your browser
+
+## Optional: production preview
+
+1. Build the app:
+
+```bash
+npm run build
+```
+
+2. Start preview server:
+
+```bash
+npm run preview
+```
+
+3. Open the preview URL shown in terminal (typically `http://localhost:4173/`).
+
+Currently, two official plugins are available:
 
 - **Caseworker Dashboard** — assigned cases, high-risk alerts, and follow-ups due today
 - **Youth Profile Page** — full profile for Amara Williams with risk score, alerts, services, and next actions
