@@ -1,16 +1,53 @@
-# React + Vite
+# FuturePlan – Youth Services Case Management Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> ⚠️ **All names, cases, and personal details in this application are entirely fictional and created for demonstration purposes only. No real youth or client data is used or stored.**
 
-Currently, two official plugins are available:
+A Streamlit-based demo platform for youth-serving caseworkers, featuring:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Caseworker Dashboard** — assigned cases, high-risk alerts, and follow-ups due today
+- **Youth Profile Page** — full profile for Amara Williams with risk score, alerts, services, and next actions
+- **AI-Assisted Intake Flow** — 10 guided questions asked one at a time with progress tracking
+- **AI Summary** — risk level, top needs, secondary needs, and urgency statement
+- **Resource Recommendations** — matched resources (housing, counseling, ID support, education, legal, and more)
+- **30/60/90 Day Action Plan** — auto-generated caseworker tasks from intake results
+- **Case Notes & Follow-Up** — add notes and schedule the next review date, saved to SQLite
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quick Start
 
-## Expanding the ESLint configuration
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## File Structure
+
+| File | Purpose |
+|------|---------|
+| `app.py` | Main Streamlit application (all pages and routing) |
+| `database.py` | SQLite database module (`intake_sessions`, `intake_answers`, `case_notes`) |
+| `sample_data.py` | Fictional sample data, intake questions, and resource catalog |
+| `requirements.txt` | Python dependencies |
+
+## Demo Script
+
+1. Open the app — you land on **Denise Johnson's Dashboard** showing 6 fictional cases.
+2. Click **"Open Amara's Case"** (or use the sidebar) to view Amara's full profile.
+3. From the profile, click **"Start New Intake Assessment"** to begin the guided intake.
+4. Answer all 10 questions (one at a time). Click **"Complete Intake"** on the last question.
+5. Click **"View AI Summary"** to see the risk score, top needs, and urgency.
+6. Navigate to **Resource Recommendations** to see matched community resources.
+7. Open the **30/60/90 Action Plan** to review caseworker tasks and export the plan.
+8. Go to **Case Notes** to add a note and schedule the next follow-up date.
+
+---
+
+## React + Vite (Future Path Dashboards)
+
+This repository also includes a React/Vite front-end for the Future Path dashboards (Teen, Caseworker, and AI Assistant). To run it:
+
+```bash
+npm install
+npm run dev
+```
